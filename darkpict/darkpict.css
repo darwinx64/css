@@ -1,7 +1,12 @@
 /* ==UserStyle==
-@name       Darkpict
-@version    20250527.01.23
-@namespace  ?
+@name         Darkpict
+@description  Dark theme for Dotpict, a pixel art website
+@namespace    darwinx64.darkpict
+@version      0.0.2
+@author       darwinx64 <tiramisyuz@proton.me> (https://github.com/darwinx64)
+@homepageURL  https://github.com/darwinx64/css/tree/master/darkpict
+@supportURL   https://github.com/darwinx64/css/issues
+@license      mit
 ==/UserStyle== */
 
 @-moz-document domain("dotpict.net") {
@@ -36,18 +41,29 @@
 	pointer-events: none;
 	border-radius: 12px;
 }
-[alt="dotpict"] {
+:has(> img[src*="https://img.dotpicko.net/"]) {
+	cursor: pointer;
+	transition: 0.5s transform linear(0, 0.0016 0.34%, 0.0084 0.79%, 0.037 1.7%, 0.0897, 0.16 3.73%, 0.3158 5.54%, 0.797 10.52%, 0.9202, 1.0252, 1.1097 14.92%, 1.1687 16.28%, 1.1914 16.96%, 1.2124 17.75%, 1.2259 18.43%, 1.2366 19.22%, 1.2428 20.13%, 1.2427, 1.236, 1.2239, 1.2073 24.2%, 1.1849 25.33%, 1.0576 30.75%, 1.0037 33.47%, 0.9795 35.05%, 0.9624, 0.9505 37.99%, 0.9431 39.57%, 0.9408 41.61%, 0.9454 43.76%, 0.9554 46.02%, 0.9858 51.33%, 0.9985 53.93%, 1.0082 56.76%, 1.0135 59.7%, 1.0145 61.85%, 1.0133 64.33%, 1.0006 74.28%, 0.9969 79.71%, 0.9967 84.8%, 1.0007 99.95%);
+	transform-origin: 50% 100px;
+}
+:has(> img[src*="https://img.dotpicko.net/"]):hover {
+	transform: scale(1.05);
+}
+[alt="dotpict"], [alt="logo"] {
 	filter: invert(1) hue-rotate(180deg);
 }
-body, .css-dvbajs {
+body, .css-dvbajs, .css-1imoge {
 	background: var(--bg-primary) !important;
 }
-.css-10b3bgg, .css-1igermc {
+.css-10b3bgg, .css-1igermc, .css-t2s0t6, .MuiList-root, .css-1hs7awj, .MuiPaper-root, .css-1rdnu7n, .css-vwhi0r {
 	background: var(--bg-secondary);
 	clip-path: var(--br-medium);
 	position: relative;
 }
-.css-10b3bgg::after {
+.MuiList-root button > div, .MuiList-root > div div:last-child {
+	background: var(--bg-secondary);
+}
+.css-10b3bgg::after, .css-t2s0t6::after, .MuiList-root::after {
 	width: calc(100% - 2.1px);
 	height: calc(100% - 2.1px);
 	top: 0;
@@ -58,10 +74,10 @@ body, .css-dvbajs {
 	border-radius: 16px;
 	pointer-events: none;
 }
-.css-1869bwy, .css-16gm5nk, .css-wbg2cm {
+.css-1869bwy, .css-16gm5nk, .css-wbg2cm, .css-ue0maf {
 	color: var(--fg-primary);
 }
-.css-1vw2680, .css-1ab5nj5, .css-n5wnrt {
+.css-1vw2680, .css-1ab5nj5, .css-n5wnrt, .css-g77has, .css-1ku4cwi, .css-1jmd3wq, .css-1kotnu3, .css-4vpam0, .MuiList-root button > div > div, .css-5nmo87 {
 	color: var(--fg-secondary);
 	font-weight: 500;
 }
@@ -82,8 +98,11 @@ div:has(> input[placeholder="Search"]) {
 	left: 50%;
 	transform: translateX(-50%);
 	img {
-		border-radius: 0 !important;
+		clip-path: none !important;
 	}
+}
+input[placeholder="Search"] {
+	color: var(--fg-primary) !important;
 }
 [style="width: 1px; height: 40px;"],
 [style="width: 64px; height: 1px;"] {
