@@ -1,0 +1,93 @@
+/* ==UserStyle==
+@name       Darkpict
+@version    20250527.01.23
+@namespace  ?
+==/UserStyle== */
+
+@-moz-document domain("dotpict.net") {
+:root {
+	--bg-primary: black;
+	--bg-secondary: #1c1c1c;
+	--bg-tertiary: #2d2d2d;
+	
+	--fg-primary: white;
+	--fg-secondary: #b0b0b0;
+	
+	--br-small: polygon(16.668147px 0px,calc(100% - 16.668147px) 0px,calc(100% - 14.918096px) 0.00826px,calc(100% - 13.168978px) 0.060654px,calc(100% - 11.424799px) 0.197557px,calc(100% - 9.69513px) 0.458757px,calc(100% - 8.001008px) 0.893204px,calc(100% - 6.374843px) 1.533764px,calc(100% - 4.859631px) 2.402118px,calc(100% - 3.511701px) 3.511701px,calc(100% - 2.402118px) 4.859631px,calc(100% - 1.533764px) 6.374843px,calc(100% - 0.893204px) 8.001008px,calc(100% - 0.458757px) 9.69513px,calc(100% - 0.197557px) 11.424799px,calc(100% - 0.060654px) 13.168978px,calc(100% - 0.00826px) 14.918096px,calc(100% - 0.00826px) calc(100% - 14.918096px),calc(100% - 0.060654px) calc(100% - 13.168978px),calc(100% - 0.197557px) calc(100% - 11.424799px),calc(100% - 0.458757px) calc(100% - 9.69513px),calc(100% - 0.893204px) calc(100% - 8.001008px),calc(100% - 1.533764px) calc(100% - 6.374843px),calc(100% - 2.402118px) calc(100% - 4.859631px),calc(100% - 3.511701px) calc(100% - 3.511701px),calc(100% - 4.859631px) calc(100% - 2.402118px),calc(100% - 6.374843px) calc(100% - 1.533764px),calc(100% - 8.001008px) calc(100% - 0.893204px),calc(100% - 9.69513px) calc(100% - 0.458757px),calc(100% - 11.424799px) calc(100% - 0.197557px),calc(100% - 13.168978px) calc(100% - 0.060654px),calc(100% - 14.918096px) calc(100% - 0.00826px),calc(100% - 16.668147px) 100%,16.668147px 100%,14.918096px calc(100% - 0.00826px),13.168978px calc(100% - 0.060654px),11.424799px calc(100% - 0.197557px),9.69513px calc(100% - 0.458757px),8.001008px calc(100% - 0.893204px),6.374843px calc(100% - 1.533764px),4.859631px calc(100% - 2.402118px),3.511701px calc(100% - 3.511701px),2.402118px calc(100% - 4.859631px),1.533764px calc(100% - 6.374843px),0.893204px calc(100% - 8.001008px),0.458757px calc(100% - 9.69513px),0.197557px calc(100% - 11.424799px),0.060654px calc(100% - 13.168978px),0.00826px calc(100% - 14.918096px),0.00826px 14.918096px,0.060654px 13.168978px,0.197557px 11.424799px,0.458757px 9.69513px,0.893204px 8.001008px,1.533764px 6.374843px,2.402118px 4.859631px,3.511701px 3.511701px,4.859631px 2.402118px,6.374843px 1.533764px,8.001008px 0.893204px,9.69513px 0.458757px,11.424799px 0.197557px,13.168978px 0.060654px,14.918096px 0.00826px,16.668147px 0px);
+;
+	--br-medium: polygon(22.224196px 0px,calc(100% - 22.224196px) 0px,calc(100% - 19.890794px) 0.011014px,calc(100% - 17.558637px) 0.080871px,calc(100% - 15.233066px) 0.263409px,calc(100% - 12.92684px) 0.611677px,calc(100% - 10.66801px) 1.190939px,calc(100% - 8.499791px) 2.045019px,calc(100% - 6.479509px) 3.202825px,calc(100% - 4.682267px) 4.682267px,calc(100% - 3.202825px) 6.479509px,calc(100% - 2.045019px) 8.499791px,calc(100% - 1.190939px) 10.66801px,calc(100% - 0.611677px) 12.92684px,calc(100% - 0.263409px) 15.233066px,calc(100% - 0.080871px) 17.558637px,calc(100% - 0.011014px) 19.890794px,calc(100% - 0.011014px) calc(100% - 19.890794px),calc(100% - 0.080871px) calc(100% - 17.558637px),calc(100% - 0.263409px) calc(100% - 15.233066px),calc(100% - 0.611677px) calc(100% - 12.92684px),calc(100% - 1.190939px) calc(100% - 10.66801px),calc(100% - 2.045019px) calc(100% - 8.499791px),calc(100% - 3.202825px) calc(100% - 6.479509px),calc(100% - 4.682267px) calc(100% - 4.682267px),calc(100% - 6.479509px) calc(100% - 3.202825px),calc(100% - 8.499791px) calc(100% - 2.045019px),calc(100% - 10.66801px) calc(100% - 1.190939px),calc(100% - 12.92684px) calc(100% - 0.611677px),calc(100% - 15.233066px) calc(100% - 0.263409px),calc(100% - 17.558637px) calc(100% - 0.080871px),calc(100% - 19.890794px) calc(100% - 0.011014px),calc(100% - 22.224196px) 100%,22.224196px 100%,19.890794px calc(100% - 0.011014px),17.558637px calc(100% - 0.080871px),15.233066px calc(100% - 0.263409px),12.92684px calc(100% - 0.611677px),10.66801px calc(100% - 1.190939px),8.499791px calc(100% - 2.045019px),6.479509px calc(100% - 3.202825px),4.682267px calc(100% - 4.682267px),3.202825px calc(100% - 6.479509px),2.045019px calc(100% - 8.499791px),1.190939px calc(100% - 10.66801px),0.611677px calc(100% - 12.92684px),0.263409px calc(100% - 15.233066px),0.080871px calc(100% - 17.558637px),0.011014px calc(100% - 19.890794px),0.011014px 19.890794px,0.080871px 17.558637px,0.263409px 15.233066px,0.611677px 12.92684px,1.190939px 10.66801px,2.045019px 8.499791px,3.202825px 6.479509px,4.682267px 4.682267px,6.479509px 3.202825px,8.499791px 2.045019px,10.66801px 1.190939px,12.92684px 0.611677px,15.233066px 0.263409px,17.558637px 0.080871px,19.890794px 0.011014px,22.224196px 0px);
+	--br-xl: 9999px;
+	-webkit-font-smoothing: antialiased;
+}
+* {
+	font-family: BlinkMacSystemFont, system-ui !important;
+}
+:has(> img[src*="https://img.dotpicko.net/"])::after {
+	content: "";
+	top: 0;
+	left: 0;
+	position: absolute;
+	clip-path: var(--br-small);
+	background: transparent;
+	width: calc(100% - 0.1px);
+	height: calc(100% - 0.35px);
+	box-shadow: 0 0 0 1px #ffffffbf inset;
+	mix-blend-mode: overlay;
+	pointer-events: none;
+	border-radius: 12px;
+}
+[alt="dotpict"] {
+	filter: invert(1) hue-rotate(180deg);
+}
+body, .css-dvbajs {
+	background: var(--bg-primary) !important;
+}
+.css-10b3bgg, .css-1igermc {
+	background: var(--bg-secondary);
+	clip-path: var(--br-medium);
+	position: relative;
+}
+.css-10b3bgg::after {
+	width: calc(100% - 2.1px);
+	height: calc(100% - 2.1px);
+	top: 0;
+	left: 0;
+	position: absolute;
+	content: "";
+	border: 1px solid var(--bg-tertiary);
+	border-radius: 16px;
+	pointer-events: none;
+}
+.css-1869bwy, .css-16gm5nk, .css-wbg2cm {
+	color: var(--fg-primary);
+}
+.css-1vw2680, .css-1ab5nj5, .css-n5wnrt {
+	color: var(--fg-secondary);
+	font-weight: 500;
+}
+:has(> [id*="ad"]) {
+	display: none;
+}
+[src="https://storage.googleapis.com/dotpict-images/web/image.png"] {
+	display: none;
+}
+.MuiBox-root .lazyload-wrapper img {
+	clip-path: var(--br-small);
+}
+div:has(> input[placeholder="Search"]) {
+	background: var(--bg-secondary);
+	border-radius: var(--br-xl);
+	position: absolute;
+	top: 22px;
+	left: 50%;
+	transform: translateX(-50%);
+	img {
+		border-radius: 0 !important;
+	}
+}
+[style="width: 1px; height: 40px;"],
+[style="width: 64px; height: 1px;"] {
+	display: none !important;
+}
+
+}
