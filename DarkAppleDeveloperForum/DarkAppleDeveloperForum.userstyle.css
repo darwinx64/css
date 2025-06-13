@@ -1,0 +1,485 @@
+/* ==UserStyle==
+@name         DarkAppleDeveloperForum
+@description  Dark theme for Apple Developer Forums
+@namespace    darwinx64.darkappledeveloperforum
+@version      0.0.1
+@author       oomfinator <tiramisyuz@proton.me> (https://github.com/oomfinator)
+@homepageURL  https://github.com/oomfinator/Userstyles/tree/master/DarkAppleDeveloperForum
+@supportURL   https://github.com/oomfinator/Userstyles/issues
+@license      mit
+==/UserStyle== */
+
+html body {
+	background-color: #1a1a1a;
+}
+
+:root {
+	--sk-body-link-color: #71a2ff;
+	--s-primary: #b4b4b4;
+}
+
+.drop-down-menu {
+	box-shadow: 0 0 10px #0000004f !important;
+}
+
+.drop-down-menu.userlogin .menu-item, .drop-down-menu.useravatar .menu-item {
+	border-bottom: 1px solid #4a4a4a !important;
+}
+
+.menu-item-link,
+.menu-item-link:hover {
+	color: white !important;
+	background: none !important
+}
+
+.menu-item:hover {
+	color: white !important;
+	background-color: #ffffff14 !important;
+}
+
+.post-content {
+	line-height: 23px;
+}
+
+.footer-mini-legal-link,
+.footer-mini-news a {
+	color: var(--sk-body-link-color) !important;
+}
+
+.footer-mini-legal-link {
+	border-right: 1px solid #4a4a4a;
+}
+
+.footer-mini-legal-links {
+	margin-right: 0;
+}
+
+.footer-mini-legal {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-mini-legal-copyright {
+	flex: 1;
+}
+
+.footer .footer-content .disclaimer,
+.footer-directory+.footer-mini .footer-mini-shop, .footer-directory+.footer-mini .footer-mini-news {
+	border-bottom: 1px solid #464646;
+}
+
+.footer-mini-news {
+	justify-content: center;
+	gap: 3px;
+}
+
+code {
+	color: white !important;
+	background-color: #131313 !important;
+	border: 1px solid #ffffff24 !important;
+	font-family: monospace !important;
+	tab-size: 30px !important;
+}
+
+.hljs-title, .hljs-tag, .hljs-symbol, .hljs-bullet, .hljs-number, .hljs-meta {
+	color: #3eaadc;
+}
+
+.hljs-comment, .hljs-attribute {
+	color: #505050;
+}
+
+.hljs-section, .hljs-class .hljs-title, .hljs-type, .hljs-attr, .hljs-built_in, .hljs-builtin-name, .hljs-params {
+	color: #8243e1;
+}
+
+* {
+	color: #e4e4e4;
+}
+
+.action-buttons button,
+.copy-code-button,
+#copyOverlay,
+.tooltip {
+	background-color: #1c1c1c !important;
+	color: #b4b4b4 !important;
+	border: 1px solid #ffffff12 !important;
+}
+
+.tooltip::after {
+	border-top-color: #1c1c1c !important;
+}
+
+.topic-overview-wrapper {
+	border: 1px solid #ffffff0d !important;
+	border-left: 0.5px solid var(--topic-color) !important;
+	border-radius: 6px;
+}
+
+.topic-overview .chiclets {
+	display: none
+}
+
+.chiclets > .read {
+	background-color: #ffffff13;
+}
+
+.create-post-button,
+.chiclets a,
+.chiclets div {
+	border-radius: 999px !important;
+	border: 1px solid #ffffff0f !important;
+	padding: 3px 9px 3px 9px !important;
+}
+
+.create-post-button {
+	color: var(--sk-body-link-color);
+	background-color: #71a2ff24;
+}
+
+.create-form {
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.search-bar,
+.ql-editor {
+	background-color: #1c1c1c;
+	border-radius: 15px !important;
+	border: 1px solid #ffffff12 !important;
+}
+
+.editor {
+	border: none !important;
+	background: none !important;
+	border-radius: 15px !important;
+}
+
+.search-button,
+.rss-feed,
+.reply-icon,
+.boost-icon,
+.views-icon,
+.boosts-icon,
+.replies-icon,
+.participants-icon,
+.topic-overview-wrapper .topic-overview-posts-container .topic-overview-posts .action-icons.apple-recommended:before,
+.icon.bell:before,
+.remove-tag-icon,
+.to-preferences-icon,
+.icon-close,
+.view-in-context,
+.comment-icon,
+.downvote-icon,
+.upvote-icon,
+.recommended-icon,
+.ac-gn-menuicon-bread,
+.ac-gn-search-placeholder-container,
+.ac-gn-searchview-bar {
+	filter: invert(0.9);
+}
+
+.arrow {
+	color: #232323 !important;
+	text-shadow: 0 -5px 5px #0000003b !important;
+}
+
+.rte-help-menu {
+	background-color: #161616 !important;
+	padding: 10px !important;
+	border-radius: 10px !important;
+	border-color: #3e3e3e !important;
+}
+
+.autocomplete * {
+	color: white !important;
+}
+
+.topic-overview-wrapper .topic-overview-posts-container .topic-overview-posts .action-icons.answered:before {
+	filter: brightness(200%) saturate(50%);
+}
+
+.mobile-footer-metadata .post-info span {
+	color: #7a7a7a !important;
+}
+
+button[aria-label="minimize the bar"] {
+	filter: invert(0.9);
+	background-color: #fbfbfb !important;
+}
+
+.announcements.callout,
+#no-post-your-activity {
+	border: 1px solid #ffffff0f !important;
+	padding: 20px;
+	border-radius: 10px !important;
+}
+
+.announcements .description > :not(.title),
+.topic-description,
+.topic-overview-posts a,
+.footer-directory-column-section-link,
+.footer-breadcrumbs-item a {
+	color: #a5a5a5 !important;
+}
+
+.horizontal-timeline-scroller-content-wrapper {
+	background: #2d2d2d !important;
+	border: none !important;
+	border-radius: 8px;
+}
+
+.horizontal-timeline-scroller-content {
+	background: #444 !important;
+	border-radius: 8px;
+	border: none !important;
+	margin-bottom: 1px !important;
+}
+
+.filter-by, .sort-by {
+	border: 1px solid #ffffff0f !important;
+	padding: 8px 16px !important;
+}
+
+.content-list-wrapper,
+.announcements.callout,
+.sub-nav,
+#ac-globalnav,
+.sort-by,
+.topic-overview-wrapper,
+.content-post,
+.create-form,
+footer,
+.footer-directory-column-section-title,
+.mobile-reply-navigator,
+.mobile-reply-navigator-counter,
+.drop-down,
+.filter-by,
+#no-post-your-activity,
+.form-textbox-input,
+.form-dropdown-select ,
+.create-form,
+.topic-overview,
+.topic-subtopic.with-icon,
+.subtopic-title,
+.tag-overview,
+.tag-title,
+.drop-down-menu,
+.user-profile-summary-container,
+.reputation-badge,
+.profile-container,
+.preferences-container,
+.browser-push-preference-status,
+.choose-avatar-form,
+.choose-avatar-popup,
+.no-post,
+.content-post-sub-card,
+.apple-recommended-badge,
+.reply-title {
+	background-color: #232323 !important;
+	color: #e4e4e4 !important;
+}
+
+.choose-avatar-popup {
+	border-radius: 30px !important;
+}
+
+.top-answer {
+	border: none !important;
+	border: 1px solid #ffffff0f !important;
+	background: #153115 !important;
+}
+
+.browser-push-preference-status,
+.content-post-sub-card,
+.apple-recommended-badge {
+	border: 1px solid #454545 !important;
+}
+
+[role="listbox"] {
+	background-color: #161616 !important;
+	color: #e4e4e4 !important;
+	border: none !important;
+}
+
+.page .preferences .row.flex-box:not(:last-child) {
+	border-color: #505050;
+}
+
+.tags-component .list-item .tag {
+	background-color: #000 !important;
+}
+
+.mobile-reply-navigator {
+	border: none;
+	box-shadow: 0 0 15px #000000ba;
+	border-radius: 10px;
+	margin: 10px;
+	width: calc(100% - 55px);
+	height: 120px;
+	transition: all 0.7s linear(0, 0.0016, 0.0061 1.09%, 0.0229 2.19%, 0.0525 3.44%, 0.096 4.84%, 0.1875 7.26%, 0.4221 12.81%, 0.5281 15.46%, 0.6286, 0.7151, 0.7871 23.9%, 0.8195, 0.8483, 0.8737 28.35%, 0.8971 29.91%, 0.9181, 0.936, 0.951, 0.9636 36.47%, 0.9748 38.27%, 0.984 40.14%, 0.9975 44.21%, 1.0051 48.97%, 1.0073 52.56%, 1.0077 56.86%, 1.0016 79.51%, 1 99.97%);
+	left: 0%;
+	opacity: 1;
+}
+
+.mobile-reply-navigator-counter {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 15px #000000ab;
+	margin: 10px;
+	width: 100px;
+	height: 20px;
+	opacity: 1;
+	transition: all 0.7s linear(0, 0.0016, 0.0061 1.09%, 0.0229 2.19%, 0.0525 3.44%, 0.096 4.84%, 0.1875 7.26%, 0.4221 12.81%, 0.5281 15.46%, 0.6286, 0.7151, 0.7871 23.9%, 0.8195, 0.8483, 0.8737 28.35%, 0.8971 29.91%, 0.9181, 0.936, 0.951, 0.9636 36.47%, 0.9748 38.27%, 0.984 40.14%, 0.9975 44.21%, 1.0051 48.97%, 1.0073 52.56%, 1.0077 56.86%, 1.0016 79.51%, 1 99.97%);
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.mobile-reply-navigator.hide {
+	display: block !important;
+	width: 0px;
+	height: 0px;
+	bottom: 10px;
+	right: 10px;
+	left: 90%;
+	opacity: 0;
+}
+
+.mobile-reply-navigator-counter:active {
+	transform: scaleX(0.85) scaleY(0.95);
+}
+
+.mobile-reply-navigator-counter.hide {
+	display: block !important;
+	pointer-events: none;
+	opacity: 0;
+	height: 120px;
+	letter-spacing: -10px;
+	width: 100%;
+}
+hr {
+	border: none;
+	border-bottom: 1px solid #383838 !important;
+}
+.footer-directory-column-section {
+	border-color: #383838 !important;
+}
+.content-post,
+.create-form,
+.content-post .content [data-lazy=true] {
+	border: none !important;
+	
+}
+.nav-tab-text {
+	padding: 5px 15px 5px 15px !important;
+	border-radius: 10px !important;
+	border: 1px solid transparent !important;
+	transition: 0.1s;
+}
+.nav-tab-text.active,
+.nav-tab-text:hover {
+	background-color: #323232 !important;
+	color: #e4e4e4 !important;
+	border: 1px solid #ffffff0a !important;
+	box-shadow: 0 0 10px #00000014;
+}
+
+.tabs-wrapper {
+	border: 1px solid #ffffff05 !important;
+	margin-top: -2px;
+	border-radius: 15px;
+}
+.tabs-wrapper,
+.progress-bar {
+	background-color: #232323 !important;
+	padding: 5px;
+}
+
+.nav-tabs-container {
+	gap: 10px;
+}
+
+.nav-bar .tabs-wrapper .nav-tabs-container .nav-tab-item {
+	margin-right: 0;
+}
+
+.sort-by {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.drop-down .drop-down-button .icon-dropdown:after {
+	filter: invert(1);
+}
+
+.announcements.callout.info  {
+	border: none;
+}
+
+html body,
+.content-list article .post-title,
+.ac-gn-link-text,
+.overview-title,
+.title,
+.hide-mobile-inline,
+.asc-outline,
+.content-post-author-name,
+.form-label,
+.title-row,
+.create-form-title,
+.user-name,
+.user-nickname,
+.section-header {
+	color: #e4e4e4 !important;
+}
+
+.chiclets .tag {
+	background-color: #212121;
+}
+
+.chiclets .subtopic,
+.chiclets .topic {
+	color: var(--chiclet-background-color);
+	background-color: var(--chiclet-color);
+	padding: 4px 9px;
+	border-radius: 2.4px;
+	border: none;
+}
+
+.chiclets .subtopic {
+	filter: contrast(150%) saturate(50%);
+}
+
+.content-list article {
+	border-top: solid 1px #171717;
+}
+
+#ac-globalnav .ac-gn-link-apple-developer {
+	background-image: url("/assets/elements/icons/brandmark/apple-developer-brandmark-i.svg?1");
+}
+
+.toolbar {
+	background: none !important;
+}
+
+.mobile-reply-navigator .post-header {
+	justify-content: space-between;
+	max-width: unset;
+}
+.mobile-reply-navigator .progress-bar,
+.mobile-reply-navigator .post-dates {
+	width: 100%;
+}
+
+.button-gray-reduced,
+.button-gray-reduced:hover,
+.button-secondary-alpha,
+.button-secondary-alpha:hover {
+	color: #fff;
+	font-weight: 400;
+	background: #1868E3;
+	box-shadow: 0 0 10px #00000014;
+	padding: 5px 13px 5px 13px;
+	border-top: 1px solid #ffffff38;
+	border-bottom: 1px solid #0000003d;
+}
