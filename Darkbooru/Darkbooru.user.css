@@ -1,0 +1,139 @@
+/* ==UserStyle==
+@name         ☾ Darkbooru
+@description  Safebooru, but dark
+@namespace    darwinx64.darkbooru
+@version      0.0.1
+@author       darwinx64 <tiramisyuz@proton.me> (https://github.com/darwinx64)
+@homepageURL  https://github.com/darwinx64/Userstyles/tree/master/Darkbooru
+@supportURL   https://github.com/darwinx64/Userstyles/issues
+@license      mit
+@preprocessor stylus
+==/UserStyle== */
+
+@-moz-document url-prefix("https://safebooru.org/") {
+	:root {
+		--font: system-ui;
+		--fg-colour: #fff;
+		--link-colour: #06f;
+		--bg-colour-primary: #101010;
+		--bg-colour-secondary: #2b2b2b;
+		--bg-colour-tertiary: #3b3b3b;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	body, div, h1, h2, h3, h4, h5, h6, p, ul, li, dd, dt, button, input[type="submit"], label {
+		font-family: var(--font) !important;
+		background-color: var(--bg-colour-primary) !important;
+		color: var(--fg-colour) !important;
+	}
+	
+	a:link, a:visited {
+		color: var(--link-colour);
+		font-weight: 600;
+	}
+	
+	#static-index {
+		div:has(img[src*="counter"]) {
+			display: none;
+		}
+	}
+	
+	.quote, .status-notice {
+		background-color: var(--bg-colour-secondary) !important;
+		border: 1px solid var(--bg-colour-tertiary) !important;
+	}
+	
+	img[src*="safebooru.org/includes/header.png"] {
+		max-width: 400px !important;
+		opacity: 0.95;
+	}
+	
+	input[type="text"], input[type="password"], input[type="email"] {
+		color: var(--fg-colour) !important;
+		appearance: none !important;
+		background-color: var(--bg-colour-secondary) !important;
+		border-radius: 10px !important;
+		padding: 5px !important;
+		border: 1px solid var(--bg-colour-tertiary) !important;
+		margin-top: 5px !important;
+	}
+	
+	button, input[type="submit"], textarea {
+		color: var(--fg-colour) !important;
+		appearance: none;
+		border-radius: 5px;
+		border: 1px solid var(--bg-colour-tertiary) !important;
+		background-color: var(--bg-colour-secondary) !important;
+		padding: 5px;
+		margin-top: 5px;
+	}
+	
+	.awesomplete {
+		*, ::before, ::after {
+			background: var(--bg-colour-secondary) !important;
+			color: var(--fg-colour) !important;
+			appearance: none !important;
+		}
+		mark {
+			background: yellow !important;
+			padding: 1px;
+			color: black !important;
+		}
+		ul {
+			border-radius: 10px;
+			padding: 5px;
+			border: 1px solid var(--bg-colour-tertiary);
+		}
+	}
+	
+	/* front page stuff */
+	body:has(#static-index) {
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		& > br {
+			display: none;
+		}
+	
+		/* separator */
+		& > div[style*="width: 100%; border-top: 1px solid #7aa5d6; text-align: center;0"] {
+			display: none;
+		}
+
+		/* hide firefox addon plug */
+		& > div[style*="text-align: center; color: #006FFA;"] {
+			display: none;
+		}
+		#links {
+			position: absolute;
+			bottom: 5px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	
+	li:has(a[href*="https://patreon.com/booru"]) {
+		display: none;
+	}
+	
+	/* the radio is just a dead link lmfao */
+	a[href*="radio.safebooru.org"] {
+		display: none;
+	}
+	
+	.highlightable {
+		tr:hover {
+			background-color: var(--bg-colour-secondary) !important;
+		}
+		td {
+			border-color: var(--bg-colour-tertiary) !important;
+		}
+	}
+	
+	.pagination {
+		a {
+			border-color: var(--bg-colour-tertiary) !important;
+		}
+	}
+}
